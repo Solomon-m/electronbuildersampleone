@@ -1,0 +1,7 @@
+.grunt
+.cache
+.sublime-grunt.cache
+*.sublime-workspace
+*.zip
+dist
+node_modules

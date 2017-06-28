@@ -1,0 +1,47 @@
+{
+  "name": "electronbuildersampleone",
+  "version": "2.0.0",
+  "description": "electronbuildersampleone",
+  "main": "index.js",
+  "author": "solomon",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ./app --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "macbuild": "build --mac --x64",
+    "winbuild": "build --win --ia32"
+  },
+  "build": {
+    "appId": "com.test.electronbuildersampleone",
+    "asar": false,
+    "electronVersion": "1.7.3",
+    "mac": {
+      "category": "public.app-category.business"
+    },
+    "win": {
+      "target": "squirrel",
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "Solomon-m",
+          "repo": "electronbuildersampleone"
+        }
+      ],
+      "certificateFile": "F:\\solomon\\codebase\\electronbuilderSample\\build\\A-CTI+Full+Incorporated.p12",
+      "icon": "F:\\solomon\\codebase\\electronbuilderSample\\build\\AW_install_icon.ico"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Solomon-m/electronbuildersampleone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Solomon-m/electronbuildersampleone/issues"
+  },
+  "homepage": "https://github.com/Solomon-m/electronbuildersampleone#readme",
+  "devDependencies": {
+    "electron-builder": "^19.6.3",
+    "electron-builder-squirrel-windows": "^19.8.0",
+    "electron-prebuilt": "^1.4.13"
+  }
+}
