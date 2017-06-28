@@ -1,6 +1,6 @@
 {
   "name": "electronbuildersampleone",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "electronbuildersampleone",
   "main": "index.js",
   "author": "solomon",
@@ -15,14 +15,14 @@
     "appId": "com.test.electronbuildersampleone",
     "asar": false,
     "electronVersion": "1.7.3",
-    "detectUpdateChannel":true,
+    "detectUpdateChannel": true,
     "publish": [
-        {
-          "provider": "github",
-          "owner": "Solomon-m",
-          "repo": "electronbuildersampleone"
-        }
-      ],
+      {
+        "provider": "github",
+        "owner": "Solomon-m",
+        "repo": "electronbuildersampleone"
+      }
+    ],
     "mac": {
       "category": "public.app-category.business"
     },
