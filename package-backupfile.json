@@ -18,8 +18,9 @@
     "detectUpdateChannel": true,
     "publish": [
       {
-        "provider": "generic",
-        "url":"http://images.sb.a-cti.com/testing/solomon/updater/RELEASES"
+        "provider": "github",
+        "owner": "Solomon-m",
+        "repo": "electronbuildersampleone"
       }
     ],
     "mac": {
@@ -32,10 +33,13 @@
     }
   },
   "repository": {
-    "type": "generic",
-    "url":"http://images.sb.a-cti.com/testing/solomon/updater/RELEASES"
+    "type": "git",
+    "url": "git+https://github.com/Solomon-m/electronbuildersampleone.git"
   },
-  "homepage": "http://images.sb.a-cti.com/testing/solomon/updater/RELEASES",
+  "bugs": {
+    "url": "https://github.com/Solomon-m/electronbuildersampleone/issues"
+  },
+  "homepage": "https://github.com/Solomon-m/electronbuildersampleone#readme",
   "devDependencies": {
     "electron-builder": "^19.6.3",
     "electron-builder-squirrel-windows": "^19.8.0",

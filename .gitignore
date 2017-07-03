@@ -4,4 +4,5 @@
 *.sublime-workspace
 *.zip
 dist
+dist-old
 node_modules
