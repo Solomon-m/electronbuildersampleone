@@ -60,6 +60,7 @@ if (handleStartupEvent()) {
 }
 
 function executeCommand(commandtype) {
+    console.warn("executeCommand function..!");
     var updateDotExe = path.resolve(path.dirname(process.execPath), '..', 'update.exe');
     var target = path.basename(process.execPath);
     var child = cp.spawn(updateDotExe, [commandtype, target], {
@@ -77,7 +78,7 @@ var updaterTest = {
     url: 'http://localhost:9000/update/darwin',
     winurl: 'http://localhost:9000/update/win32/',
     seturl: function() {
-        console.log("executing seturl function:");
+        console.log("executing seturl function...!");
         if (/^win32/.test(process.platform)) {
             this.pkgjson = JSON.parse(fs.readFileSync(path.join(process.resourcesPath, "app.asar", "package.json"), "utf8"));
             autoUpdater.setFeedURL(this.winurl);
